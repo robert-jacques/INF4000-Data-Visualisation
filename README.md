@@ -37,7 +37,8 @@ Drawing on **17 years of diagnostic intuition in optometry**, I implemented high
 
 ---
 
-## 🚀 How to Reproduce
-The analysis script is designed for autonomy. 
+## 🚀 Reproducibility
+The analysis script is designed for autonomy:
 1. Clone this repository.
-2. Open the script in `/code` and run. It will pull the source data directly from this GitHub repository to ensure consistent results.
+2. Open `/code/inf4000-spotify-analysis.R` in RStudio.
+3. The script is configured to automatically pull the dataset from this repository for immediate environmental replication.
