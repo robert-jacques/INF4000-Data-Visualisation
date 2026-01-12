@@ -38,3 +38,11 @@ Drawing on **17 years of diagnostic intuition in optometry**, I implemented high
 * `/code`: R scripts for data processing and `ggplot2` implementation.
 * `/visualisations`: Final high-resolution composite plot.
 * `/report`: Detailed reflection on design choices and the ASSERT framework application.
+
+---
+
+## 🚀 Reproducibility
+The analysis script is designed for autonomy:
+1. **Clone** this repository.
+2. **Open** `code/inf4000-data-visualisation.R` in RStudio.
+3. **Execute the script**: The code is configured to automatically pull the source dataset from this repository for immediate verification of the visualisations and the ASSERT framework implementation.
