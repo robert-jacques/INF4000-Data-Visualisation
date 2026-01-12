@@ -15,8 +15,8 @@ The project focus was not merely on the data, but on the application of the **AS
 
 ## ♿ Inclusive Design & Clinical Perspective
 Drawing on **17 years of diagnostic intuition in optometry**, I implemented high-stakes visual standards to prevent "diagnostic error" in data interpretation:
-* **CVD Optimisation:** Utilised the `viridis` palette to ensure visualisations are accessible to users with **Colour Vision Deficiency**.
-* **Cognitive Load Management:** Optimized the **data-ink ratio** to enhance the signal-to-noise ratio, a principle vital for diagnostic accuracy.
+* **CVD Optimisation:** Utilised colour-blind safe palettes to ensure visualisations are accessible to users with **Colour Vision Deficiency**.
+* **Cognitive Load Management:** Optimised the **data-ink ratio** to enhance the signal-to-noise ratio, a principle vital for diagnostic accuracy.
 * **Legibility Standards:** Standardised typography and faceted layouts to support inclusive and reliable data storytelling.
 
 ---
@@ -27,14 +27,17 @@ Drawing on **17 years of diagnostic intuition in optometry**, I implemented high
 3. **Density Plots:** Comparison of feature distributions by mood category.
 4. **Grouped Bar Charts:** Analysis of variance across key audio attributes.
 
+---
 
-
-## 📝 Key Findings
-* Higher valence (positive mood) correlates with increased **danceability** and more consistent **energy** levels.
-* Insights suggest that mood-based categorisation can significantly enhance the precision of personalised recommendation algorithms.
+## 📁 Repository Structure
+* **`code/inf4000-spotify-analysis.R`**: R script for data processing and `ggplot2` implementation. Configured with a remote URL for full reproducibility.
+* **`data/inf4000-spotify-tracks.csv`**: The complete Spotify Tracks Dataset (114,000 records) utilised for the primary analysis.
+* **`visualisations/inf4000-valence-analysis-composite.png`**: Final high-resolution composite plot.
+* **`report/inf4000-data-visualisation.pdf`**: Detailed reflection on design choices and the ASSERT framework application.
 
 ---
-## 📁 Repository Structure
-* `/code`: R scripts for data processing and `ggplot2` implementation.
-* `/visualisations`: Final high-resolution composite plot.
-* `/report`: Detailed reflection on design choices and the ASSERT framework application.
+
+## 🚀 How to Reproduce
+The analysis script is designed for autonomy. 
+1. Clone this repository.
+2. Open the script in `/code` and run. It will pull the source data directly from this GitHub repository to ensure consistent results.
