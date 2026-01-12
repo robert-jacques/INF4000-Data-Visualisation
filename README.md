@@ -1,19 +1,40 @@
-## Analysing how Key Audio Features vary across different categories <br> of Valence (Mood) in the *Spotify Tracks Dataset*
+# Clinical Data Visualisation: Spotify Audio Feature Analysis
+### MSc Data Science | Module: INF4000 | Grade: 83%
 
-This repository contains visualisations created using the *Spotify Tracks Dataset*, (available [here](https://raw.githubusercontent.com/robert-jacques/datavisRProject/refs/heads/main/data/data.csv) and directly from
-[Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)), which is a tabular dataset of music tracks that are available on the popular music streaming platform, Spotify.
-Each of the 114,000 tracks in the dataset is associated with a range of audio features, each of which provides a measurement of a particular musical characteristic, across 12 attributes in total.
+## 🎯 Research Objective
+To investigate how key audio features (danceability, energy, loudness, and tempo) vary across categories of **Valence (Mood)** within the Spotify Tracks Dataset (114,000 records). 
 
-The aim of the project was to create an informative, composite visualisation using R, and a report containing related reflections, which would answer the research question *How do key audio features vary across different categories of valence?*
+The project focus was not merely on the data, but on the application of the **ASSERT framework** to engineer visualisations that manage cognitive load and remain accessible to all users.
 
-The component visualisations were created using R and RStudio, and the code is designed to be run in RStudio. The R code can be found [here](https://raw.githubusercontent.com/robert-jacques/datavisRProject/refs/heads/main/code.R).
+---
 
-The composite visualisation comprises:
+## 🛠️ Methodology & Frameworks
+* **ASSERT Model:** Systematically applied to guide the transition from raw data to communicative insight.
+* **Grammar of Graphics:** Implemented via `ggplot2` in **R** to create a multi-layered composite visualisation.
+* **Data Transformation:** Categorised continuous valence variables into Negative, Neutral, and Positive levels to enable comparative analysis.
 
-* Plot 1. Violin Plots with overlayed Boxplots - Distribution of Danceability across each Valence category,
-* Plot 2. Correlation Matrix of Key Audio Features and Valence,
-* Plot 3. Density Plots - Density Distributions of Key Audio Features by Valence category,
-* Plot 4. Bar Charts - Variance of Key Audio Features by Valence category.
+## ♿ Inclusive Design & Clinical Perspective
+Drawing on **17 years of diagnostic intuition in optometry**, I implemented high-stakes visual standards to prevent "diagnostic error" in data interpretation:
+* **CVD Optimisation:** Utilised the `viridis` palette to ensure visualisations are accessible to users with **Colour Vision Deficiency**.
+* **Cognitive Load Management:** Optimized the **data-ink ratio** to enhance the signal-to-noise ratio, a principle vital for diagnostic accuracy.
+* **Legibility Standards:** Standardised typography and faceted layouts to support inclusive and reliable data storytelling.
 
- 
-**The project’s findings suggest that personalised music recommendations could be enhanced through mood-based categorisation of tracks.**
+---
+
+## 📈 Composite Visualisation Components
+1. **Violin & Boxplots:** Distribution of *Danceability* across Valence categories.
+2. **Correlation Matrix:** Identifying relationships between features such as *Energy* and *Loudness*.
+3. **Density Plots:** Comparison of feature distributions by mood category.
+4. **Grouped Bar Charts:** Analysis of variance across key audio attributes.
+
+
+
+## 📝 Key Findings
+* Higher valence (positive mood) correlates with increased **danceability** and more consistent **energy** levels.
+* Insights suggest that mood-based categorisation can significantly enhance the precision of personalised recommendation algorithms.
+
+---
+## 📁 Repository Structure
+* `/code`: R scripts for data processing and `ggplot2` implementation.
+* `/visualisations`: Final high-resolution composite plot.
+* `/report`: Detailed reflection on design choices and the ASSERT framework application.
