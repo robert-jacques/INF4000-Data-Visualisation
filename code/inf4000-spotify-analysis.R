@@ -8,7 +8,7 @@ library(patchwork)
 
 
 
-spotify <- read.csv("https://raw.githubusercontent.com/robert-jacques/datavisRProject/refs/heads/main/data/data.csv")
+spotify <- read.csv("https://raw.githubusercontent.com/robert-jacques/INF4000-Data-Visualisation/main/data/inf4000-spotify-tracks.csv")
 
                                                                                     # Load dataset.
 
